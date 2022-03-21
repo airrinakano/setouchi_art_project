@@ -1,0 +1,162 @@
+body{
+    font-family: sans-serif;
+}
+.header{
+    margin-bottom: 160px;
+    text-align: center;
+    position: relative;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+#title{
+    position: absolute;
+ 
+    width: 80%;
+    top: 60px;
+    left: 95px;
+}
+
+
+.nav_toggle{
+    display: block;
+  
+    width: 62px;
+    height: 40px;
+    position: fixed;
+    left: 30px;
+    top: 60px;
+   
+
+}
+.nav_toggle i{
+    position: absolute;
+   
+    display: block;
+transition: 0.5s;
+background-color:#05747F;
+width: 100%;
+height:2px;
+
+}
+.nav_toggle i:nth-child(1){
+    top:0;
+}
+.nav_toggle i:nth-child(2){
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+.nav_toggle i:nth-child(3){
+    bottom: 0;
+}
+
+.nav{
+    position: fixed;
+    visibility: hidden;
+}
+.nav.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav_toggle.show  i:nth-child(1){
+    transform:  translateY(23px)rotate(-45deg);
+}
+.nav_toggle.show  i:nth-child(2){
+    opacity: 0;
+}
+.nav_toggle.show  i:nth-child(3){
+    transform:  translateY(-12px) rotate(45deg);
+}
+
+
+nav .nav_menu_ul{
+    position: fixed;
+    top: 150px;
+    left: 0;
+    padding: 15px;
+    transition: 0.6s;
+    
+}
+
+
+ .nav_menu_li{
+     list-style: none;
+    
+ }
+.nav_menu_li a {
+    text-decoration: none;
+    color:#05747F;
+}
+
+.header img{
+    width: 100%;
+}
+.container{
+    background-color: white;
+    z-index: 1000000;
+    position: relative;
+    top: 800px;
+
+}
+.navContain{
+    background-color: white;
+    z-index: 1000001;
+    position: relative;
+    top: 800px;
+}
+.image{
+    
+    
+    text-align: center;
+    width: 100%;
+}
+.image img{
+    padding-top: 20px;
+    margin-bottom: 160px;
+    width: 80%;
+}
+.image img:hover {
+    opacity: 0.6;
+    transition: 0.6s;
+}
+.map img{
+    width: 900px;
+    margin-bottom: 160px;
+}
+.footer{
+    text-align: center;
+}
+.footer h2{
+    letter-spacing: 0.2em;
+    line-height: 1;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c8c8c8;
+    color: #444444;
+}
+.titlecon{
+    text-align: center;
+}
+
+.concrete{
+text-align: center;
+
+
+
+}
+h4 {
+    color: #6f6d6d;
+    font-family: YakuHanJP, Meiryo, sans-serif;
+    letter-spacing: .05em;
+    margin: 0;
+    padding: 80px;
+    
+}
+
+
+.map{
+    text-align: center;
+    
+}
+
