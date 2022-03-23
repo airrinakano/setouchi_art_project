@@ -156,6 +156,7 @@ nav .nav_menu_ul {
   left: 5%;
 }
 .aline_center {
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,7 +173,7 @@ nav .nav_menu_ul {
   background-color: #6eb5d1;
   opacity: 0.9;
   height: 60%;
-  width: 45%;
+  /* width: 45%; */
   top: 10%;
 
   -ms-writing-mode: tb-rl;
@@ -230,4 +231,21 @@ h4 {
 
 .map {
   text-align: center;
+}
+
+/*========= 1文字ずつ出現させるためのCSS ===============*/
+
+.eachTextAnime span {
+  opacity: 0;
+}
+.eachTextAnime.appeartext span {
+  animation: text_anime_on 1s ease-out forwards;
+}
+@keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
