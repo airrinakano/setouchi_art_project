@@ -223,7 +223,7 @@ nav .nav_menu_ul {
 }
 h4 {
   color: #6f6d6d;
-  font-family: YakuHanJP, Meiryo, sans-serif;
+  font-family: hare YakuHanJP, Meiryo, sans-serif;
   letter-spacing: 0.05em;
   margin: 0;
   padding: 80px;
@@ -239,7 +239,7 @@ h4 {
   opacity: 0;
 }
 .eachTextAnime.appeartext span {
-  animation: text_anime_on 1s ease-out forwards;
+  animation: text_anime_on 0.01s ease-out forwards;
 }
 @keyframes text_anime_on {
   0% {
@@ -248,4 +248,35 @@ h4 {
   100% {
     opacity: 1;
   }
+}
+
+/*==================================================
+ふわっ
+===================================*/
+
+/* fadeUp */
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+
+.fadeUpTrigger {
+  opacity: 0;
 }
