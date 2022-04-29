@@ -104,10 +104,68 @@ nav .nav_menu_ul {
   position: relative;
   top: 640px;
 }
+.explanation {
+  font-size: 14px;
+}
+.eachTextAnime span {
+  opacity: 0;
+  font-size: 18px;
+}
+/* 風を知らない */
+.text1 {
+  width: 45%;
+  top: 24%;
+}
+/* 歩く */
+.text2 {
+  width: 55%;
+  top: 24%;
+}
+/* 瀬戸内の海 */
+.text3 {
+  width: 50%;
+  top: 24%;
+}
+/* 貝殻集め */
+.text4 {
+  width: 45%;
+  top: 24%;
+}
+/* かもめの */
+.text5 {
+  width: 45%;
+  top: 24%;
+}
+
 /* （PC用）の記述 */
 @media screen and (max-width: 1199.9x) {
   .container {
     top: 640px;
+  }
+  /* 風を知らない */
+  .text1 {
+    width: 700px;
+    top: 24%;
+  }
+  /* 歩く */
+  .text2 {
+    width: 800px;
+    top: 24%;
+  }
+  /* 瀬戸内の海 */
+  .text3 {
+    width: 700px;
+    top: 24%;
+  }
+  /* 貝殻集め */
+  .text4 {
+    width: 700px;
+    top: 24%;
+  }
+  /* かもめの */
+  .text5 {
+    width: 650px;
+    top: 24%;
   }
 }
 /* （PC用）の記述 */
@@ -115,17 +173,55 @@ nav .nav_menu_ul {
   .container {
     top: 700px;
   }
+  .explanation {
+    font-size: 22px;
+  }
 }
 /* （モニター用）の記述 */
 @media screen and (min-width: 1500px) and (max-width: 1800px) {
   .container {
     top: 800px;
   }
+  .eachTextAnime span {
+    opacity: 0;
+    font-size: 24px;
+  }
+  .explanation {
+    font-size: 22px;
+  }
+  /* 風を知らない */
+  .text1 {
+    width: 700px;
+    top: 10%;
+  }
+  /* 歩く */
+  .text2 {
+    width: 800px;
+    top: 27%;
+  }
+  /* 瀬戸内の海 */
+  .text3 {
+    width: 700px;
+    top: 10%;
+  }
+  /* 貝殻集め */
+  .text4 {
+    width: 700px;
+    top: 10%;
+  }
+  /* かもめの */
+  .text5 {
+    width: 650px;
+    top: 10%;
+  }
 }
 /* （モニター用）の記述 */
 @media screen and (min-width: 1800px) and (max-width: 1920px) {
   .container {
     top: 900px;
+  }
+  .explanation {
+    font-size: 22px;
   }
 }
 
@@ -173,9 +269,6 @@ nav .nav_menu_ul {
   background-color: #6eb5d1;
   opacity: 0.9;
   height: 60%;
-  /* width: 45%; */
-  top: 10%;
-
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-family: "hare";
@@ -204,23 +297,11 @@ nav .nav_menu_ul {
   width: 900px;
   margin-bottom: 160px;
 }
-.footer {
+footer {
   text-align: center;
-}
-.footer h2 {
-  letter-spacing: 0.2em;
-  line-height: 1;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #c8c8c8;
-  color: #444444;
-}
-.titlecon {
-  text-align: center;
+  padding-bottom: 1rem;
 }
 
-.concrete {
-  text-align: center;
-}
 h4 {
   color: #6f6d6d;
   font-family: hare YakuHanJP, Meiryo, sans-serif;
@@ -232,18 +313,23 @@ h4 {
 .map {
   text-align: center;
 }
+/* footer */
 
 /*========= 1文字ずつ出現させるためのCSS ===============*/
 
-.eachTextAnime span {
+/* .eachTextAnime span {
   opacity: 0;
-}
+  font-size: 24px;
+} */
 .eachTextAnime.appeartext span {
-  animation: text_anime_on 0.01s ease-out forwards;
+  animation: text_anime_on 0.0001s ease-out forwards;
 }
 @keyframes text_anime_on {
   0% {
     opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
